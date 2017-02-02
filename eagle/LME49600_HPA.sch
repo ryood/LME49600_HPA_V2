@@ -14233,13 +14233,13 @@ Source: www.kingbright.com</description>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device="" value="IN"/>
 <part name="AGND1" library="supply1" deviceset="AGND" device=""/>
 <part name="IC1" library="burr-brown" deviceset="OPA2134" device="P"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="0207/7" value="1.2k"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="AGND3" library="supply1" deviceset="AGND" device=""/>
 <part name="C2" library="rcl" deviceset="C-EU" device="025-024X044" value="0.1uF"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="025-024X044" value="0.1uF"/>
 <part name="AGND4" library="supply1" deviceset="AGND" device=""/>
 <part name="AGND5" library="supply1" deviceset="AGND" device=""/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="0207/7" value="1.2k"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="P+1" library="supply1" deviceset="V+" device=""/>
 <part name="P-1" library="supply1" deviceset="V-" device=""/>
 <part name="C4" library="rcl" deviceset="C-EU" device="025-024X044" value="0.1uF"/>
@@ -14252,7 +14252,7 @@ Source: www.kingbright.com</description>
 <part name="C9" library="rcl" deviceset="C-EU" device="050-050X075" value="1.0uF"/>
 <part name="AGND8" library="supply1" deviceset="AGND" device=""/>
 <part name="AGND9" library="supply1" deviceset="AGND" device=""/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="0207/7" value="1.2k"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="AGND11" library="supply1" deviceset="AGND" device=""/>
 <part name="P+2" library="supply1" deviceset="V+" device=""/>
 <part name="P-2" library="supply1" deviceset="V-" device=""/>
@@ -14262,18 +14262,18 @@ Source: www.kingbright.com</description>
 <part name="P+3" library="supply1" deviceset="V+" device=""/>
 <part name="P-3" library="supply1" deviceset="V-" device=""/>
 <part name="FRAME1" library="frames" deviceset="A4P-LOC" device=""/>
-<part name="C6" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="4.7uF"/>
-<part name="C7" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="4.7uF"/>
+<part name="C6" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="10uF"/>
+<part name="C7" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="10uF"/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X2" device="" value="IN"/>
 <part name="AGND13" library="supply1" deviceset="AGND" device=""/>
 <part name="IC2" library="burr-brown" deviceset="OPA2134" device="P"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="0207/7" value="1.2k"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="AGND14" library="supply1" deviceset="AGND" device=""/>
 <part name="C12" library="rcl" deviceset="C-EU" device="025-024X044" value="0.1uF"/>
 <part name="C13" library="rcl" deviceset="C-EU" device="025-024X044" value="0.1uF"/>
 <part name="AGND15" library="supply1" deviceset="AGND" device=""/>
 <part name="AGND16" library="supply1" deviceset="AGND" device=""/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="0207/7" value="1.2k"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="P+4" library="supply1" deviceset="V+" device=""/>
 <part name="P-4" library="supply1" deviceset="V-" device=""/>
 <part name="C14" library="rcl" deviceset="C-EU" device="025-024X044" value="0.1uF"/>
@@ -14286,11 +14286,11 @@ Source: www.kingbright.com</description>
 <part name="C17" library="rcl" deviceset="C-EU" device="050-050X075" value="1.0uF"/>
 <part name="AGND19" library="supply1" deviceset="AGND" device=""/>
 <part name="AGND20" library="supply1" deviceset="AGND" device=""/>
-<part name="R11" library="rcl" deviceset="R-EU_" device="0207/7" value="1.2k"/>
+<part name="R11" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="P+5" library="supply1" deviceset="V+" device=""/>
 <part name="P-5" library="supply1" deviceset="V-" device=""/>
-<part name="C18" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="4.7uF"/>
-<part name="C19" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="4.7uF"/>
+<part name="C18" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="10uF"/>
+<part name="C19" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="10uF"/>
 <part name="U$1" library="mylib2" deviceset="LME49600-BRD3" device=""/>
 <part name="U$2" library="mylib2" deviceset="LME49600-BRD3" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="3MM" value="BULE"/>
