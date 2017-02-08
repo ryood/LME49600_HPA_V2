@@ -14304,6 +14304,7 @@ Source: www.kingbright.com</description>
 <part name="JP7" library="pinhead" deviceset="PINHD-1X2" device="" value="PWR+"/>
 <part name="JP6" library="pinhead" deviceset="PINHD-1X2" device="" value="PWR-"/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X3" device="" value="OUT"/>
+<part name="JP4" library="pinhead" deviceset="PINHD-1X2" device="" value="TP_GND"/>
 </parts>
 <sheets>
 <sheet>
@@ -14360,8 +14361,8 @@ Source: www.kingbright.com</description>
 <instance part="P-2" gate="1" x="91.44" y="170.18"/>
 <instance part="C1" gate="G$1" x="60.96" y="218.44"/>
 <instance part="C10" gate="G$1" x="60.96" y="210.82"/>
-<instance part="AGND2" gate="VR1" x="71.12" y="205.74" smashed="yes">
-<attribute name="VALUE" x="78.74" y="208.28" size="1.778" layer="96" rot="R180"/>
+<instance part="AGND2" gate="VR1" x="71.12" y="208.28" smashed="yes">
+<attribute name="VALUE" x="78.74" y="210.82" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="P+3" gate="1" x="60.96" y="226.06"/>
 <instance part="P-3" gate="1" x="60.96" y="200.66"/>
@@ -14430,6 +14431,7 @@ Source: www.kingbright.com</description>
 <instance part="JP7" gate="G$1" x="30.48" y="218.44" rot="MR0"/>
 <instance part="JP6" gate="G$1" x="30.48" y="205.74" rot="MR0"/>
 <instance part="JP2" gate="A" x="167.64" y="185.42"/>
+<instance part="JP4" gate="G$1" x="76.2" y="220.98"/>
 </instances>
 <busses>
 </busses>
@@ -14504,7 +14506,7 @@ Source: www.kingbright.com</description>
 <junction x="60.96" y="213.36"/>
 <pinref part="AGND2" gate="VR1" pin="AGND"/>
 <wire x1="60.96" y1="213.36" x2="71.12" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="213.36" x2="71.12" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="213.36" x2="71.12" y2="210.82" width="0.1524" layer="91"/>
 <label x="40.64" y="213.36" size="1.778" layer="95"/>
 <pinref part="JP7" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="218.44" x2="38.1" y2="218.44" width="0.1524" layer="91"/>
@@ -14513,6 +14515,14 @@ Source: www.kingbright.com</description>
 <wire x1="33.02" y1="208.28" x2="38.1" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="208.28" x2="38.1" y2="213.36" width="0.1524" layer="91"/>
 <junction x="38.1" y="213.36"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="223.52" x2="71.12" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="223.52" x2="71.12" y2="220.98" width="0.1524" layer="91"/>
+<junction x="71.12" y="213.36"/>
+<pinref part="JP4" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="220.98" x2="71.12" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="220.98" x2="71.12" y2="220.98" width="0.1524" layer="91"/>
+<junction x="71.12" y="220.98"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="2"/>
