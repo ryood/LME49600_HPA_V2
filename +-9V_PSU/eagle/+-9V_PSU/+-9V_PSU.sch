@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -14998,6 +14998,96 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="pinhead">
+<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1X02">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
+<package name="1X02/90">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
+<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
+<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
+<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PINHD2">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PINHD-1X2" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/90" package="1X02/90">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15014,8 +15104,8 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="050-045X075" value="0.47uF/Film"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="050-045X075" value="0.47uF/Film"/>
-<part name="C5" library="rcl" deviceset="C-EU" device="050-024X044" value="0.1uF"/>
-<part name="C6" library="rcl" deviceset="C-EU" device="050-024X044" value="0.1uF"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="025-024X044" value="0.1uF"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="025-024X044" value="0.1uF"/>
 <part name="D2" library="diode" deviceset="SCHOTTKY-DIODE" device="DO35-7" value="1S4"/>
 <part name="C8" library="rcl" deviceset="CPOL-EU" device="SANYO_C6" value="100uF"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="0207/7" value="4.7k"/>
@@ -15039,11 +15129,17 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <part name="P+2" library="supply1" deviceset="+12V" device=""/>
 <part name="P-2" library="supply1" deviceset="-12V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="SL3" library="con-amp-quick" deviceset="M03" device=""/>
-<part name="SL4" library="con-amp-quick" deviceset="M03" device=""/>
-<part name="SL5" library="con-amp-quick" deviceset="M03" device=""/>
-<part name="SL1" library="con-amp-quick" deviceset="M02" device=""/>
-<part name="SL2" library="con-amp-quick" deviceset="M02" device=""/>
+<part name="SL3" library="con-amp-quick" deviceset="M03" device="" value="DC9V"/>
+<part name="SL4" library="con-amp-quick" deviceset="M03" device="" value="DC9V"/>
+<part name="SL5" library="con-amp-quick" deviceset="M03" device="" value="DC12V"/>
+<part name="SL1" library="con-amp-quick" deviceset="M02" device="" value="ACIN1"/>
+<part name="SL2" library="con-amp-quick" deviceset="M02" device="" value="ACIN2"/>
+<part name="SUPPLY5" library="supply2" deviceset="+9V" device=""/>
+<part name="SUPPLY6" library="supply2" deviceset="-9V" device=""/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="0207/7" value="10k"/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X2" device="" value="LED"/>
+<part name="JP2" library="pinhead" deviceset="PINHD-1X2" device="" value="TP_GND"/>
+<part name="GND4" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15061,9 +15157,9 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <instance part="D2" gate="G$1" x="134.62" y="86.36" rot="MR180"/>
 <instance part="C8" gate="G$1" x="167.64" y="111.76"/>
 <instance part="R1" gate="G$1" x="195.58" y="129.54" rot="R90"/>
-<instance part="R2" gate="G$1" x="195.58" y="114.3" rot="R90"/>
+<instance part="R2" gate="G$1" x="195.58" y="106.68" rot="R90"/>
 <instance part="LED1" gate="G$1" x="195.58" y="139.7"/>
-<instance part="LED2" gate="G$1" x="195.58" y="106.68"/>
+<instance part="LED2" gate="G$1" x="195.58" y="116.84"/>
 <instance part="SUPPLY1" gate="G$1" x="195.58" y="154.94"/>
 <instance part="SUPPLY2" gate="G$1" x="195.58" y="88.9"/>
 <instance part="C7" gate="G$1" x="167.64" y="134.62"/>
@@ -15085,7 +15181,13 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <instance part="SL4" gate="G$1" x="88.9" y="55.88" rot="R180"/>
 <instance part="SL5" gate="G$1" x="127" y="55.88" rot="R180"/>
 <instance part="SL1" gate="G$1" x="35.56" y="144.78" rot="MR180"/>
-<instance part="SL2" gate="G$1" x="35.56" y="132.08" rot="MR180"/>
+<instance part="SL2" gate="G$1" x="35.56" y="129.54" rot="MR180"/>
+<instance part="SUPPLY5" gate="G$1" x="149.86" y="63.5"/>
+<instance part="SUPPLY6" gate="G$1" x="149.86" y="43.18"/>
+<instance part="R3" gate="G$1" x="157.48" y="58.42" rot="R180"/>
+<instance part="JP1" gate="G$1" x="170.18" y="55.88"/>
+<instance part="JP2" gate="G$1" x="198.12" y="55.88"/>
+<instance part="GND4" gate="1" x="187.96" y="40.64"/>
 </instances>
 <busses>
 </busses>
@@ -15126,8 +15228,6 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <wire x1="167.64" y1="129.54" x2="167.64" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="D5" gate="G$1" pin="A"/>
 <pinref part="D6" gate="G$1" pin="C"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="195.58" y1="119.38" x2="195.58" y2="121.92" width="0.1524" layer="91"/>
 <junction x="195.58" y="121.92"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="124.46" x2="195.58" y2="121.92" width="0.1524" layer="91"/>
@@ -15136,14 +15236,16 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <junction x="96.52" y="121.92"/>
 <pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="96.52" y1="121.92" x2="96.52" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="142.24" x2="60.96" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="132.08" x2="60.96" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="142.24" x2="60.96" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="129.54" x2="60.96" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="121.92" x2="96.52" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="SL2" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="132.08" x2="60.96" y2="132.08" width="0.1524" layer="91"/>
-<junction x="60.96" y="132.08"/>
+<wire x1="43.18" y1="129.54" x2="60.96" y2="129.54" width="0.1524" layer="91"/>
+<junction x="60.96" y="129.54"/>
 <pinref part="SL1" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="142.24" x2="43.18" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="195.58" y1="119.38" x2="195.58" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -15160,17 +15262,25 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <pinref part="SL5" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="55.88" x2="119.38" y2="55.88" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="195.58" y1="58.42" x2="187.96" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="58.42" x2="187.96" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="55.88" x2="187.96" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="55.88" x2="187.96" y2="55.88" width="0.1524" layer="91"/>
+<junction x="187.96" y="55.88"/>
+</segment>
 </net>
 <net name="-9V" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="VO"/>
 <wire x1="144.78" y1="99.06" x2="147.32" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="147.32" y1="99.06" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="99.06" x2="167.64" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="99.06" x2="180.34" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="99.06" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="99.06" x2="195.58" y2="101.6" width="0.1524" layer="91"/>
 <junction x="180.34" y="99.06"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="154.94" y1="106.68" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
@@ -15183,10 +15293,12 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <junction x="147.32" y="99.06"/>
 <wire x1="180.34" y1="99.06" x2="180.34" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="91.44" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
-<junction x="195.58" y="99.06"/>
 <pinref part="D6" gate="G$1" pin="A"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="SUPPLY2" gate="G$1" pin="-9V"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="101.6" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
+<junction x="195.58" y="99.06"/>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="-9V"/>
@@ -15196,6 +15308,12 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <pinref part="SL4" gate="G$1" pin="3"/>
 <wire x1="81.28" y1="53.34" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
 <junction x="68.58" y="53.34"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="55.88" x2="149.86" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="55.88" x2="149.86" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="SUPPLY6" gate="G$1" pin="-9V"/>
 </segment>
 </net>
 <net name="+9V" class="0">
@@ -15234,11 +15352,11 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <wire x1="81.28" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
 <junction x="68.58" y="58.42"/>
 </segment>
-</net>
-<net name="N$1" class="0">
 <segment>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="SUPPLY5" gate="G$1" pin="+9V"/>
+<wire x1="149.86" y1="60.96" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="58.42" x2="152.4" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -15257,9 +15375,9 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 </net>
 <net name="N$6" class="0">
 <segment>
-<wire x1="43.18" y1="129.54" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="127" x2="76.2" y2="127" width="0.1524" layer="91"/>
 <pinref part="B1" gate="1" pin="AC2"/>
-<wire x1="76.2" y1="129.54" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="127" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="SL2" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -15321,6 +15439,19 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <wire x1="114.3" y1="53.34" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="SL5" gate="G$1" pin="3"/>
 <wire x1="119.38" y1="53.34" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="58.42" x2="167.64" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
